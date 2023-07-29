@@ -1,0 +1,152 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+
+  font-family: "Lato", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: linear-gradient(0deg, rgb(127, 122, 122), rgb(20, 19, 19));
+}
+/* rgb(247, 247, 247), rgb(252, 221, 221) */
+.music_cont {
+  width: 335px;
+  height: 470px;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 4px 4px 15px 1px rgb(255, 255, 255);
+  text-align: center;
+  margin: auto;
+}
+.music_info {
+  margin: 0.3rem 0 0.5rem 0;
+  line-height: 2.5;
+}
+.music_info h2 {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0);
+  /* border:0.1px solid red; */
+  color: white;
+}
+.music_info p {
+  line-height: 1.3;
+}
+.img_sec {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  margin: auto;
+  margin-top: 20px;
+}
+
+.img_sec img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: fill;
+  box-shadow: 1px 1px 10px rgb(0, 0, 0);
+  /* box-shadow: 0px 0px 10px rgb(255, 145, 145); */
+}
+.audio {
+  width: 80%;
+  height: 1rem;
+  margin-top: 0.5rem;
+  visibility: hidden;
+  /* display:none; */
+}
+.buttons {
+  width: 60%;
+  height: 50px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 13px;
+}
+.btt {
+  width: 2.4rem;
+  height: 2.4rem;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  background-color: rgb(57, 56, 56);
+  color: white;
+}
+.butt:hover {
+  box-shadow: 2px 2px 10px rgb(2, 2, 2);
+  color: rgb(57, 56, 56);
+  background-color: white;
+}
+.rotatete {
+  animation: ghumar;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes ghumar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.show {
+  visibility: visible;
+  height: 3rem;
+}
+.thoda_niche {
+  /* transform: rotate(45deg); */
+  /* height: 50px; */
+  /* transform: rotate(45deg); */
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+  color: rgb(73, 62, 62);
+}
+.progressbar_container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.progress_div {
+  width: 80%;
+  height: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 7);
+  border-radius: 4rem;
+  position: relative;
+  margin-top: 0.5rem;
+  transition: all 10ms linear;
+  cursor: pointer;
+  appearance: none;
+}
+.progressok {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 100%;
+  background-color: black;
+  height: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 7);
+  border-radius: 4rem;
+  transition: width 200ms linear;
+  cursor: pointer;
+  appearance: none;
+}
+.progress_duration_meter {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}

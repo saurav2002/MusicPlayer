@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music</title>
+    <link rel="icon" href="./images/images.jpg">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="playmusic.css" />
+  </head>
+
+  <body>
+    <div class="music_cont">
+      <div class="music_info">
+        <h2>Music Player</h2>
+        <div class="text">
+          <p>Song Name :</p>
+          <p id="song_name">Positively Energetic</p>
+        </div>
+        <div class="text">
+          <p>Artist Name :</p>
+          <p id="song_artist">JieJie</p>
+        </div>
+      </div>
+
+      <div class="img_sec">
+        <img src="./images/party.jpg" class="" alt="" />
+      </div>
+      <div class="progress"></div>
+      <audio src="./audio/song.mp3" class="audio"></audio>
+
+      <div class="progressbar_container" id="progress_container">
+        <div class="progress_duration_meter">
+          <div id="current_time">00</div>
+          <div id="duration">2:44</div>
+        </div>
+        <div class="progress_div" id="progress_div">
+          <div class="progressok" id="progressid"></div>
+        </div>
+      </div>
+
+      <div class="buttons">
+        <button class="btt" id="pre">
+          <i class="fas fa-backward"></i>
+        </button>
+        <button class="btt" id="play">
+          <i class="fas fa-play"></i>
+        </button>
+        <button class="btt" id="next">
+          <i class="fas fa-forward"></i>
+        </button>
+      </div>
+    </div>
+
+    <script src="playjs.js"></script>
+  </body>
+</html>
